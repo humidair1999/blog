@@ -2,6 +2,6 @@ h1 Welcome to Harp.
 h3 This is yours to own. Enjoy.
 
 ul
-  each article, slug in public.posts._data
+  each article, slug in public._data
     li
-      a(href="posts/#{ slug }") #{ article.title }
+      a(href="#{ slug }") #{ article.title }
