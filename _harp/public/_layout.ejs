@@ -28,39 +28,26 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <%- partial("_partials/_header") %>
-
-        <div>
-            <%- yield %>
-        </div>
-
-        <%- partial("_partials/_footer") %>
-
-
-        <div class="container row">
+        <div class="container">
             <header role="banner" class="row">
-                <h1 class="col span_4">Site Title</h1>
-            
-                <h2 class="col span_8">Site Description</h2>
-            
-                <nav role="navigation" class="row">
-                    Insert global nav here.
-                </nav>
+                <%- partial("_partials/_header") -%>
             </header>
     
             <main role="main" class="row">
-                <article class="col span_8 clr">
-                    Insert page content here.
-                </article>
-            
-                <aside role="complementary" class="col span_4 clr">
-                    Insert sidebar stuff here.
-                </aside>
+                <%- yield -%>
             </main>
             
             <footer role="contentinfo" class="row">
-                Insert footer stuff here.
+                <%- partial("_partials/_footer") -%>
             </footer>
         </div>
     </body>
+
+    <!-- <article class="col span_8 clr">
+        <span style="float: left;">Insert page content here.</span>
+    </article>
+
+    <aside role="complementary" class="col span_4 clr">
+        Insert sidebar stuff here.
+    </aside> -->
 </html>

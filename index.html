@@ -15,24 +15,27 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="css/typeplate.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="js/libs/respond.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-    <h1>header</h1>
-</header>
-
-        <div>
-            <h1>Welcome to Harp.</h1>
-<h3>This is yours to own. Enjoy.</h3>
-
-
+        <div class="container">
+            <header role="banner" class="row">
+                <h1>J. Ky Marsh - Blog</h1>
+            
+<!-- put blurb about blog and short bio(?) here -->            </header>
+    
+            <main role="main" class="row">
+                
 <ul>
             <li>
             <a href="a-good-article">A Good Article</a>
@@ -48,12 +51,18 @@
             <br>
             Another brief piece of text about what this post contains
         </li>
-    </ul>
+    </ul>            </main>
+            
+            <footer role="contentinfo" class="row">
+                <span>Some footer content</span>            </footer>
         </div>
-
-        <footer>
-    footer
-</footer>
-
     </body>
+
+    <!-- <article class="col span_8 clr">
+        <span style="float: left;">Insert page content here.</span>
+    </article>
+
+    <aside role="complementary" class="col span_4 clr">
+        Insert sidebar stuff here.
+    </aside> -->
 </html>
