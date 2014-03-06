@@ -1,14 +1,20 @@
 <html>
     <head>
         <title><%=title %></title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
+
     <body>
-    <%- partial("_parts/_header") %>
-    <div id="main-content" class="container" role="content">
-        <%- partial("_parts/_breadcrumb") %>
+
+    <%- partial("_partials/_header") %>
+
+    <div>
         <%- yield %>
     </div>
-    <%- partial("_parts/_footer") %>
+
+    <%- partial("_partials/_footer") %>
+
     </body>
+
 </html>
