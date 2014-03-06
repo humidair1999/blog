@@ -15,9 +15,13 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="css/typeplate.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="js/libs/respond.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -32,5 +36,31 @@
 
         <%- partial("_partials/_footer") %>
 
+
+        <div class="container row">
+            <header role="banner" class="row">
+                <h1 class="col span_4">Site Title</h1>
+            
+                <h2 class="col span_8">Site Description</h2>
+            
+                <nav role="navigation" class="row">
+                    Insert global nav here.
+                </nav>
+            </header>
+    
+            <main role="main" class="row">
+                <article class="col span_8 clr">
+                    Insert page content here.
+                </article>
+            
+                <aside role="complementary" class="col span_4 clr">
+                    Insert sidebar stuff here.
+                </aside>
+            </main>
+            
+            <footer role="contentinfo" class="row">
+                Insert footer stuff here.
+            </footer>
+        </div>
     </body>
 </html>
