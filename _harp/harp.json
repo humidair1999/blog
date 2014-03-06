@@ -1,7 +1,7 @@
 {
     "globals": {
         "title": "J. Ky Marsh - Blog",
-        "name": "empty",
-        "uri": "http://jkymarsh.com/blog"
+        "author": "J. Ky Marsh",
+        "description": "The personal blog of J. Ky Marsh"
     }
 }
